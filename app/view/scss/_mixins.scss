@@ -1,0 +1,24 @@
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=#{-1*sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+    filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=#{-1*sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+}
+// @mixin material-textfield($name, $lightcolor, $color, $darkcolor) {
+//   .material-textfield.#{$name}{
+//       input
+//           border-bottom: 0.1rem solid $color
+//           color: $darkcolor
+//
+//       label::after
+//           background: $color
+//
+//       label::before, input[required]:focus ~ label::before
+//           color: $lightcolor
+//
+//       input:invalid ~ label::before
+//           color: $color
+// }

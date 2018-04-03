@@ -1,0 +1,28 @@
+{
+  "name": "simple-bs",
+  "description": "simple pure bootstrap page",
+  "main": "index.js",
+  "authors": [
+    "Den Hnatiuk"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "simple",
+    "pure",
+    "bootstrap",
+    "page"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/view/lib",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}

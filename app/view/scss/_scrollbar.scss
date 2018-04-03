@@ -1,0 +1,26 @@
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background:
+    // linear-gradient(
+    //   to bottom,
+    //   #000,
+    //   #fabe1d,
+    //   #000
+    // ),
+    linear-gradient(
+      to left,
+      #fff,
+      #fff 5px,
+      #fabe1d 5px,
+      #fabe1d 7px,
+      #000
+    );
+  // outline: 1px solid slategrey;
+}

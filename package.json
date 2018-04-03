@@ -1,0 +1,34 @@
+{
+  "name": "gradaz",
+  "version": "1.0.0",
+  "description": "gradaz website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dist": "gulp --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenysHnatiuk/gradaz.git"
+  },
+  "author": "DenHnatiuk <denys.hnatiuk@gmail.com>",
+  "license": "SEE LICENSE IN license.txt",
+  "bugs": {
+    "url": "https://github.com/DenysHnatiuk/gradaz/issues"
+  },
+  "homepage": "https://github.com/DenysHnatiuk/gradaz#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "cssnano": "^3.10.0",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "minimatch": "^3.0.4",
+    "wiredep": "^4.0.0"
+  }
+}

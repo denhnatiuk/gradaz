@@ -1,0 +1,49 @@
+.hero-overlay{
+  background-image: url(../images/top-bg.jpg);
+  background-position: center;
+  height: 678px;
+  width: 100%;
+  margin-top: 90px;
+}
+.section-header-sup:before{
+  content: "+";
+  display: inline-block;
+  width:20px;
+  height:20px;
+  margin-right: 20px;
+  font-size: 26px;
+}
+.section-header-sup:hover:before{
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.portfolio-item-1 .portfolio-item-thumbnail{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portfolio-item-2 .portfolio-item-thumbnail{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/portfolio-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portfolio-item-3 .portfolio-item-thumbnail{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/portfolio-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.discuss{
+  background: url(../images/discuss.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.footer-social__link{
+  width:36px;
+  height:36px;
+}

@@ -1,0 +1,5 @@
+/node_modules/
+/app/view/lib/
+/.sandbox/
+/.idea/
+/app/view/images/WD Discovery/resources/app.asar

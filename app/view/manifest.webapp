@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "gradaz",
+  "launch_path": "/index.html",
+  "description": "Digital agency GRADAZ",
+  "icons": {
+    "128": "wp-content/themes/gradaz/assets/images/logo.png",
+  },
+  "developer": {
+    "name": "Den Hnatiuk",
+    "url": "http://gradaz.com/"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "ua",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "gradaz",
+      "description": "Digital agency GRADAZ"
+    }
+  }
+}

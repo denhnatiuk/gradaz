@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'GeorginaDemo';
+  src: url("../fonts/GeorginaDemo-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+// Avenir Next Cyr font source: https://webfonts.pro/base-web-fonts/sans-serif-grotesque/218-avenir-next-cyr.html
+@font-face {
+font-family: 'AvenirNextCyr-Regular';
+src: url('../fonts/AvenirNextCyr-Regular.eot');
+src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
+     url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'AvenirNextCyr-Medium';
+src: url('../fonts/AvenirNextCyr-Medium.eot');
+src: url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+     url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'AvenirNextCyr-Bold';
+src: url('../fonts/AvenirNextCyr-Bold.eot');
+src: url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+     url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'AvenirNextCyr-Regular';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("../fonts/AvenirNextCyr-Regular.otf") format("otf");
+// }
+// @font-face {
+//   font-family: 'AvenirNextCyr-Medium';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url("../fonts/AvenirNextCyr-Medium.otf") format("otf");
+// }
+// @font-face {
+//   font-family: 'AvenirNextCyr-Bold';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url("../fonts/AvenirNextCyr-Bold.otf") format("otf");
+// }
+
+body{
+  font-family:'AvenirNextCyr-Regular';
+  font-size: 16px;
+  line-height: 18px;
+}
+.navbar-brand, .footer-brand{
+  font-family: 'GeorginaDemo';
+  font-size: 26px;
+  line-height: 100%;
+}
+.btn-main{
+  font-family: 'AvenirNextCyr-Medium';
+  font-size: 16px;
+}
+.hero-header{
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 70px;
+  &>.secondary{
+    font-size: 20px;
+  }
+}
+.section-header{
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.section-header-sub{
+  font-size: 15px;
+  line-height: 23px;
+}
+.section-header-sup:before{
+  font-size: 22px;
+  font-weight: bold;
+}
+.services-item:hover {
+  text-decoration: none;
+}
+.services-item-header{
+  font-size: 30px;
+}
+.social-right .social-right-item{
+  font-size: 15px;
+  font-weight: 500;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.section-header, .services-item-header{
+  text-transform: uppercase;
+  font-family: 'AvenirNextCyr-Bold';
+}
+.portfolio-item-sup{
+  font-size: 18px;
+}
+.portfolio-item-sub{
+  font-size: 16px;
+}
+.portfolio-item-header{
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 30px;
+}
+.portfolio .portfolio-link, .partners .partners-link, .about .about-link{
+  text-decoration: none;
+}
+.discuss .discuss-header{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.discuss .section-header-sub{
+  text-align: center;
+  font-size: 15px;
+}
+.about-achievements__count{
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 35px;
+  line-height: 18px;
+}
+.about-achievements__description{
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-header{
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer-menu__item{
+  font-size: 14px;
+  line-height:25px;
+}
+.footer a{
+  text-decoration: none;
+}
+.copyright{
+  font-size: 12px;
+}
+.footer-menu__item{
+  color: #000;
+}
+.footer-menu__item a, .footer-contacts__item a{
+  text-decoration: none;
+}
