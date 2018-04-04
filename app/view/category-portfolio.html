@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+  <!-- safari 9 bug fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="GRADAZ">
+  <link rel="icon" sizes="192x192" href="wp-content/themes/theme/assets/images/logo.png">
+  <link rel="favicon" href="wp-content/themes/twentyseventeen-child/assets/images/logo.png" type="image/png">
+  <title>GRADAZ</title>
+  <!--stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <!--search engines-->
+  <!--open graph & social-->
+
+  <!--fav-->
+  <!-- scripts -->
+</head>
+<body class="main-body">
+  <header>
+    <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header navbar-left">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+              <span class="sr-only">menu</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="#">GRADAZ</a>
+        </div>
+        <div class="collapse navbar-collapse  nav-justified" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-center">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="navbar-tel disabled" disabled><span class="glyphicon glyphicon-earphone"></span>
+              0 800 454-45-45</a></li>
+            <li>
+              <a href="#" class="btn-lg btn-main" data-toggle="modal" data-target="#headerModal">
+                  Есть вопросы?
+                </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="headerModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container blog-page category-portfolio">
+      <div class="breadcrumbs">Main \ Blog</div>
+      <h2 class="page-header">Портфолио</h2>
+      <div class="row">
+        <div class="button-group filters-button-group">
+            <button class="btn btn-lg btn-tab is-checked" data-filter="*">Все работы</button>
+            <button class="btn btn-lg btn-tab" data-filter=".info">Информационные сайты</button>
+            <button class="btn btn-lg btn-tab" data-filter=".shop">Интернет-магазины</button>
+            <button class="btn btn-lg btn-tab" data-filter=".seo">SEO-кейсы</button>
+            <button class="btn btn-lg btn-tab" data-filter=".design">Дизайн</button>
+            <button class="btn btn-lg btn-tab" data-filter=".smm">SMM-кейсы</button>
+        </div>
+        <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+            <article class="info">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-1.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="info shop">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-2.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop smm">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-3.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop seo smm">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-3.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="info smm">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-1.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="info seo">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-2.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="smm">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-2.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="seo design">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-1.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop smm">
+              <div class="portfolio-item ">
+                <div class="portfolio-item-thumbnail">
+                  <img src="./images/portfolio-3.jpg" class="" />
+                </div>
+                <div class="portfolio-item-description">
+                  <span class="portfolio-item-sup">Корпоративный сайт</span>
+                  <h3 class="portfolio-item-header">ПАТ "Укрнафта"</h3>
+                  <span class="portfolio-item-sub">Наше агенство разрабатывает и поддерживает уникальные програмные решения, которые помогают компаниям.</span>
+                  <a href="#" class="btn-lg btn-main">Посмотреть кейс</a>
+                </div>
+              </div>
+            </article>
+        </section>
+        <div class="portfolio-add-more"><button class="btn btn-lg btn-main">Хочу еще</button></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container-fluid section discuss">
+      <!-- <span class="section-header-sup"></span> -->
+      <h2 class="section-header discuss-header">обсудить проект</h2>
+      <p class="section-header-sub">Крутые проекты начинаются с заполнения этой формы.</p>
+      <div class="discuss-form-container">
+        <form id="discuss-form" action="send_me">
+          <div class="row">
+            <div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-0">
+              <div class="field-group">
+                <div class="inputgroup">
+                  <input id="discussFormName" class="text form-input" type="name" />
+                  <label for="name" data-content="Ваше имя">Ваше имя</label>
+                </div>
+                <div class="inputgroup">
+                  <input id="discussFormPhone" class="form-input" name="phone" size="9" type="tel" min="11" inputmode="numeric" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                  <label for="phone" data-content="Ваше имя">Номер телефона</label>
+                </div>
+                <div class="inputgroup">
+                  <input id="discussFormEmail" class="text form-input" type="email" />
+                  <label for="email" data-content="Ваше имя">Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-0">
+              <div class="field-group">
+                <div class="inputgroup">
+                  <textarea id="discussFormMessage" class="text form-input" type "message"></textarea>
+                  <label for="message">Расскажите нам о своей идее</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="discuss-form__button">
+            <input role="button" type="submit" name="submit" onclick="showMailingPopUp();" class="btn-lg btn-main">
+          </div>
+          <div class="discuss-form__message"></div>
+        </form>
+      </div>
+      <div class="container discuss-background">
+        <canvas id="formDots" class="dots"></canvas>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 footer-copyright">
+          <a class="footer-brand" href="#"><h3>GRADAZ</h3></a>
+          <p class="copyright">
+            &copy; 2017-2018 диджитал-агенство Gradaz. <br> Создание и продвижение сайтов.<br> Разработка мобильных приложений.
+          </p>
+          <div class="footer-social">
+            <a href="https://vk.com/gradaz_digital " class="footer-social__link vk-icon"><span>vkontakte</span></a>
+            <a href="https://www.facebook.com/gradaz.digirtal/" class="footer-social__link fb-icon"><span>facebook</span></a>
+            <a href="https://www.instagram.com/gradaz_digital/" class="footer-social__link insta-icon"><span>instagram</span></a>
+            <a href="https://www.behance.net/Gradaz" class="footer-social__link behance-icon"><span>behance</span></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3 class="footer-header">Меню</h3>
+          <ul class="footer-menu footer-nav">
+            <li class="footer-menu__item footer-nav__item"><a href="">Портфолио</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">Услуги</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">Команда</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">О нас</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 ">
+          <h3 class="footer-header">Услуги</h3>
+          <ul class="footer-menu footer-servises">
+            <li class="footer-menu__item footer-nav__item"><a href="">Разработка</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">SЕО&nbsp;продвижение</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">Брендинг</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">Дизайн</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">Маркетинг</a></li>
+            <li class="footer-menu__item footer-nav__item"><a href="">SMM&nbsp;продвижение</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 footer-contacts">
+          <h3 class="footer-header">Контакты</h3>
+          <ul class="footer-menu footer-contacts__list">
+            <li class="footer-contacts__item address">
+              <address>
+                  Николаев <br>
+                  ул.Малая морская 28
+                </address>
+            </li>
+            <li class="footer-contacts__item tel">
+              <a href="tel:+380935125597" class="tel">
+                  +38 (093) 512 55 97
+                </a>
+            </li>
+            <li class="footer-contacts__item email">
+              <a href="mailto:gradaz@gmail.com">
+                  gradaz@gmail.com
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="secondary">
+        <aside class="likes"></aside>
+        <aside class="recent-news"></aside>
+        <aside class="comments"></aside>
+      </div>
+    </div>
+  </footer>
+  <!--scripts-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"defer></script>
+  <!-- <script>window.jQuery || document.write("<script src='js/jquery.min.js'></script>");</script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+  <!-- <script>$.fn.modal || document.write('<script src="js/bootstrap.min.js"></script>');</script> -->
+
+
+
+  <!-- subscribe mailchimp onclick -->
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false" async></script>
+  <script>
+    // mailchimp popup
+    function showMailingPopUp() {
+      require(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+          "baseUrl": "mc.us11.list-manage.com",
+          "uuid": "YOUR_UUID_GOES_HERE",
+          "lid": "YOUR_LID_GOES_HERE"
+        })
+      })
+      document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+    // document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+  </script>
+
+  <!-- portfolio gallery scripts -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script> -->
+  <script src="https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007714979/custom/page/hack-a-thon-3/masonry.min.min.js" charset="utf-8" defer></script>
+  <script src="https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007849180/custom/page/hack-a-thon-3/isotope.min.js" charset="utf-8" defer></script>
+  <script src="./js/team.slider.js" charset="utf-8" defer></script>
+  <script src="./js/portfolio.masonry.js" charset="utf-8" defer></script>
+  <!-- END portfolio gallery scripts -->
+  <script src="/js/main.js" charset="utf-8"></script>
+  <!-- google maps api script need key -->
+  <!-- <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script> -->
+  <!-- <script>
+    // remove UI labels from gmail map
+    // var map = new google.maps.Map(document.getElementById("map_canvas"), {
+    //      panControl: false,
+    //      zoomControl: false,
+    //      scaleControl: false,
+    // });
+  </script> -->
+</body>
+
+</html>
