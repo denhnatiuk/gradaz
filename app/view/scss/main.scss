@@ -37,6 +37,98 @@ body{
 .navbar-tel{
   margin-right:9px;
 }
+#headerModal{
+  & .modal-header{
+    border:0;
+    padding: 45px;
+    padding-bottom: 0;
+    &:after{
+      content:'×';
+      display: block;
+      position: absolute;
+      top:10px;
+      right:10px;
+      font-size: 4rem;
+    }
+  }
+  & .form-header{
+    font-family: 'AvenirNextCyr-Bold';
+    font-size: 50px;
+    line-height: 48px;
+  }
+  & .form-header__sub{
+    font-size: 15px;
+    line-height: 23px;
+    color: #949494;
+  }
+}
+#headerForm{
+  padding: 45px;
+  padding-top: 25px;
+  color:#000;
+}
+.header-form-container .inputgroup label{
+  position: absolute;
+  z-index: 2;
+}
+.header-form-container .field-group input{
+  border:0;
+  margin-top: 20px;
+  border-bottom: 2px solid #000;
+}
+#headerFormName, #headerFormMessage{
+  border:0;
+  margin-top: 20px;
+  border-bottom: 2px solid #000;
+}
+#headerFormMessage{
+  height: 112px;
+  color: #000;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid #999;
+  background-color: transparent;
+  background: linear-gradient(to bottom, transparent, transparent 19px, #000 20px, #000 22px, transparent 21px, transparent 63px, #999 64px, #999 66px, transparent 66px, transparent)
+}
+#headerFormName,
+#headerFormPhone,
+#headerFormEmail,
+#headerFormMessage{
+  display: block;
+  width: 100%;
+}
+#headerFormName ~ label,
+#headerFormPhone ~ label,
+#headerFormEmail ~ label{
+  transform: translate(0, -20px);
+  transition: all .2s ease-in-out;
+}
+#headerFormMessage ~ label{
+  transform: translate(0, -112px);
+  transition: all .2s ease-in-out;
+}
+#headerFormName:focus ~ label,
+#headerFormPhone:focus ~ label,
+#headerFormEmail:focus ~ label{
+  transform: translate(0, -40px);
+  font-size: 12px;
+  text-decoration: none;
+  border: 0;
+}
+,
+#headerFormMessage:focus ~ label{
+  transform: translate(0, -132px);
+  font-size: 12px;
+}
+.header-form__button{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 36px;
+    & input{
+      border:0;
+    }
+}
 .hero-header{
   position: absolute;
   margin-top: 260px;
@@ -756,10 +848,90 @@ img.banner{
   line-height: 23px;
   margin-bottom: 0;
 }
-
-
-
-
+// ==========================================================services-page
+.services-wrapper{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services-block{
+  display: block;
+  float: left;
+  margin: 1%;
+  width: 31.3%;
+  overflow: hidden;
+}
+.services-list{
+  list-style-type: none;
+  & .services-list-header{
+    font-family: 'AvenirNextCyr-Bold';
+    font-size: 25px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 25px;
+  }
+  & .services-item{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #000;
+    &:hover{
+      color: #fabe1a;
+    }
+    & a{
+      color: #000;
+      text-decoration: none;
+    }
+    &:hover a{
+      color: #fabe1a;
+    }
+  }
+  & .services-item:before{
+    content: "+";
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-right: 20px;
+    font-size: 26px;
+  }
+  & .services-item:hover:before{
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+.cms-wrapper{
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  & .cms-block{
+    width: 19.7%;
+    padding: 10px;
+    & img{
+      filter: grayscale(1);
+      &:hover{
+        filter: none;
+      }
+    }
+  }
+}
+.cms-header{
+  text-transform: none;
+}
+.services-page{
+  .page-header{
+    font-family: 'AvenirNextCyr-Bold';
+    font-size: 50px;
+    line-height: 18px;
+  }
+}
 
 
 

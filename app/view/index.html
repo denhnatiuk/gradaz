@@ -68,9 +68,39 @@
     </nav>
     <!-- Modal -->
     <div class="modal fade" id="headerModal" role="dialog">
-      <div class="modal-dialog modal-sm">
+      <div class="modal-dialog modal-md">
         <!-- Modal content-->
         <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="form-header">Есть вопросы?</h4>
+            <span class="form-header__sub">Всё что нужно сделать это заполнить форму.</span>
+          </div>
+          <div class="header-form-container">
+            <form id="headerForm" action="send_me">
+                <div class="field-group">
+                    <div class="inputgroup">
+                      <input id="headerFormName" class="text form-input" type="name" />
+                      <label for="name" data-content="Ваше имя">Ваше имя</label>
+                    </div>
+                    <div class="inputgroup">
+                      <input id="headerFormPhone" class="form-input" name="phone" size="9" type="tel" min="11" inputmode="numeric" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                      <label for="phone" data-content="Ваше имя">Номер телефона</label>
+                    </div>
+                    <div class="inputgroup">
+                      <input id="headerFormEmail" class="text form-input" type="email" />
+                      <label for="email" data-content="Ваше имя">Email</label>
+                    </div>
+                    <div class="inputgroup">
+                      <textarea id="headerFormMessage" class="text form-input" type "message"></textarea>
+                      <label for="message">Расскажите нам о своей идее</label>
+                    </div>
+              </div>
+              <div class="header-form__button">
+                <input role="button" type="submit" name="submit" onclick="showMailingPopUp();" class="btn-lg btn-main">
+              </div>
+              <div class="header-form__message"></div>
+            </form>
+          </div>          
         </div>
       </div>
     </div>
