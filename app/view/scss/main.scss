@@ -13,9 +13,6 @@ body{
   padding-right: 90px;
   overflow-x: hidden;
 }
-input:focus {
-  outline: 0;
-}
 .btn-main{
   border-radius: 0;
 }
@@ -39,99 +36,8 @@ input:focus {
 .navbar-tel{
   margin-right:9px;
 }
-#headerModal{
-  & .modal-header{
-    border:0;
-    padding: 45px;
-    padding-bottom: 0;
-  }
-  & .form-header{
-    font-family: 'AvenirNextCyr-Bold';
-    font-size: 50px;
-    line-height: 48px;
-  }
-  & .form-header__sub{
-    font-size: 15px;
-    line-height: 23px;
-    color: #949494;
-  }
-}
-.modal-escape{
-  display: block;
-  position: absolute;
-  top:10px;
-  right:10px;
-  font-size: 4rem;
-  background: none;
-  border:0;
-}
-#headerForm{
-  padding: 45px;
-  padding-top: 25px;
-  color:#000;
-}
-.header-form-container .inputgroup label{
-  position: absolute;
-  z-index: 2;
-}
-.header-form-container .field-group input{
-  border:0;
-  margin-top: 20px;
-  border-bottom: 2px solid #000;
-}
-#headerFormName, #headerFormMessage{
-  border:0;
-  margin-top: 20px;
-  border-bottom: 2px solid #000;
-}
-#headerFormMessage{
-  height: 112px;
-  color: #000;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-bottom: 2px solid #999;
-  background-color: transparent;
-  background: linear-gradient(to bottom, transparent, transparent 19px, #000 20px, #000 22px, transparent 21px, transparent 63px, #999 64px, #999 66px, transparent 66px, transparent)
-}
-#headerFormName,
-#headerFormPhone,
-#headerFormEmail,
-#headerFormMessage{
-  display: block;
-  width: 100%;
-}
-#headerFormName ~ label,
-#headerFormPhone ~ label,
-#headerFormEmail ~ label{
-  transform: translate(0, -20px);
-  transition: all .2s ease-in-out;
-}
-#headerFormMessage ~ label{
-  transform: translate(0, -112px);
-  transition: all .2s ease-in-out;
-}
-#headerFormName:placeholder-shown ~ label,
-#headerFormPhone:placeholder-shown ~ label,
-#headerFormEmail:placeholder-shown ~ label{
-  transform: translate(0, -40px);
-  font-size: 12px;
-  text-decoration: none;
-  border: 0;
-}
-,
-#headerFormMessage:focus ~ label{
-  transform: translate(0, -132px);
-  font-size: 12px;
-}
-.header-form__button{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 36px;
-    & input{
-      border:0;
-    }
-}
+@import "headerModal";
+
 .hero-header{
   position: absolute;
   margin-top: 260px;

@@ -5,3 +5,23 @@ body{
 .form-header.subscribe-header{
   font-size: 2.25rem;
 }
+
+.navbar-header.navbar-left{
+  width: inherit;
+}
+.nav.navbar-nav.navbar-center{
+  width:inherit;
+  margin:0;
+}
+.navbar-fixed-top>.container{
+  max-width:inherit;
+}
+.navbar-collapse.nav-justified.collapse.in{
+  // background-color: #fff;
+}
+.nav.navbar-nav.navbar-right{
+  // display: none;
+}
+h1.hero-header{
+  font-size: 4.25rem;
+}

@@ -297,9 +297,6 @@ body {
   padding-right: 90px;
   overflow-x: hidden; }
 
-input:focus {
-  outline: 0; }
-
 .btn-main {
   border-radius: 0; }
 
@@ -322,6 +319,12 @@ input:focus {
 
 .navbar-tel {
   margin-right: 9px; }
+
+input:focus, textarea:focus, select:focus {
+  outline: 0; }
+
+#headerModal .form__error {
+  display: none; }
 
 #headerModal .modal-header {
   border: 0;
@@ -374,34 +377,39 @@ input:focus {
   border-right: 2px solid transparent;
   border-bottom: 2px solid #999;
   background-color: transparent;
-  background: linear-gradient(to bottom, transparent, transparent 19px, #000 20px, #000 22px, transparent 21px, transparent 63px, #999 64px, #999 66px, transparent 66px, transparent); }
+  background: linear-gradient(to bottom, transparent, transparent 19px, #000 20px, #000 22px, transparent 21px, transparent 63px, #999 64px, #999 66px, transparent 66px, transparent);
+  touch-action: manipulation; }
 
 #headerFormName,
 #headerFormPhone,
 #headerFormEmail,
 #headerFormMessage {
   display: block;
-  width: 100%; }
-
-#headerFormName ~ label,
-#headerFormPhone ~ label,
-#headerFormEmail ~ label {
-  transform: translate(0, -20px);
-  transition: all .2s ease-in-out; }
-
-#headerFormMessage ~ label {
-  transform: translate(0, -112px);
-  transition: all .2s ease-in-out; }
+  width: 100%;
+  touch-action: manipulation; }
 
 #headerFormName:placeholder-shown ~ label,
 #headerFormPhone:placeholder-shown ~ label,
 #headerFormEmail:placeholder-shown ~ label {
+  transform: translate(0, -20px);
+  transition: all .2s ease-in-out; }
+
+#headerFormMessage:placeholder-shown ~ label {
+  transform: translate(0, -112px);
+  transition: all .2s ease-in-out; }
+
+#headerFormName:not(:placeholder-shown) + label,
+#headerFormEmail:not(:placeholder-shown) + label,
+#headerFormPhone:not(:placeholder-shown) + label,
+#headerFormName:focus ~ label,
+#headerFormPhone:focus ~ label,
+#headerFormEmail:focus ~ label {
   transform: translate(0, -40px);
   font-size: 12px;
   text-decoration: none;
   border: 0; }
 
-
+#headerFormMessage:not(:placeholder-shown) ~ label,
 #headerFormMessage:focus ~ label {
   transform: translate(0, -132px);
   font-size: 12px; }
@@ -412,6 +420,20 @@ input:focus {
   margin-top: 36px; }
   .header-form__button input {
     border: 0; }
+
+/**
+* By default, the placeholder should be transparent. Also, it should
+* inherit the transition.
+*/
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit; }
+
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+  opacity: 1; }
 
 .hero-header {
   position: absolute;
@@ -1213,4 +1235,13 @@ img.banner {
     margin: 0;
     padding: 0; }
   .form-header.subscribe-header {
-    font-size: 2.25rem; } }
+    font-size: 2.25rem; }
+  .navbar-header.navbar-left {
+    width: inherit; }
+  .nav.navbar-nav.navbar-center {
+    width: inherit;
+    margin: 0; }
+  .navbar-fixed-top > .container {
+    max-width: inherit; }
+  h1.hero-header {
+    font-size: 4.25rem; } }
