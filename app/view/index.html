@@ -74,24 +74,25 @@
           <div class="modal-header">
             <h4 class="form-header">Есть вопросы?</h4>
             <span class="form-header__sub">Всё что нужно сделать это заполнить форму.</span>
+            <button type="button" class="modal-escape" data-dismiss="modal">×</button>
           </div>
           <div class="header-form-container">
             <form id="headerForm" action="send_me">
                 <div class="field-group">
                     <div class="inputgroup">
-                      <input id="headerFormName" class="text form-input" type="name" />
+                      <input id="headerFormName" class="text form-input" type="name" placeholder="" required/>
                       <label for="name" data-content="Ваше имя">Ваше имя</label>
                     </div>
                     <div class="inputgroup">
-                      <input id="headerFormPhone" class="form-input" name="phone" size="9" type="tel" min="11" inputmode="numeric" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                      <input id="headerFormPhone" class="form-input" name="phone" size="9" type="tel" min="11" inputmode="numeric" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                       <label for="phone" data-content="Ваше имя">Номер телефона</label>
                     </div>
                     <div class="inputgroup">
-                      <input id="headerFormEmail" class="text form-input" type="email" />
+                      <input id="headerFormEmail" class="text form-input" type="email" required/>
                       <label for="email" data-content="Ваше имя">Email</label>
                     </div>
                     <div class="inputgroup">
-                      <textarea id="headerFormMessage" class="text form-input" type "message"></textarea>
+                      <textarea id="headerFormMessage" class="text form-input" type "message" required></textarea>
                       <label for="message">Расскажите нам о своей идее</label>
                     </div>
               </div>
@@ -100,7 +101,7 @@
               </div>
               <div class="header-form__message"></div>
             </form>
-          </div>          
+          </div>
         </div>
       </div>
     </div>
@@ -112,7 +113,9 @@
       </div>
       <div class="container hero-overlay"></div>
       <div class="container hero-background">
-        <canvas id="dots" class="dots"></canvas>
+        <div class="dots-wrapper">
+          <canvas id="dots" class="dots"></canvas>
+        </div>
       </div>
       <ul class="social-right">
         <li class=""><a href="" class="social-right-item">FB</a></li>

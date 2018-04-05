@@ -1,17 +1,19 @@
 function getDocumentWidth() {
   return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 };
-
 function getDocumentHeight() {
   return Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 };
+// redraw interval
+var interval = 350;
+setInterval(function () {drawDots();}, interval);
 
+// query  all canvas elements;
 // var canvasEls = document.querySelectorAll('dots');
-// var interval = 350;
 var canvasList = ['dots','formDots','subscribeDots'];
-// setInterval(function () {
-//         drawDots();
-//     }, interval);
+
+
+
 // for (var i = 0; i < canvasList.length; i++) {
 //    var canvas = document.getElementById(canvasList[i]);
 //    canvas.addEventListener('resize', onResize, false);

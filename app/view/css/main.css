@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body::-webkit-scrollbar {
   width: 0.5em; }
 
@@ -298,6 +297,9 @@ body {
   padding-right: 90px;
   overflow-x: hidden; }
 
+input:focus {
+  outline: 0; }
+
 .btn-main {
   border-radius: 0; }
 
@@ -325,13 +327,6 @@ body {
   border: 0;
   padding: 45px;
   padding-bottom: 0; }
-  #headerModal .modal-header:after {
-    content: '×';
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 4rem; }
 
 #headerModal .form-header {
   font-family: 'AvenirNextCyr-Bold';
@@ -342,6 +337,15 @@ body {
   font-size: 15px;
   line-height: 23px;
   color: #949494; }
+
+.modal-escape {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 4rem;
+  background: none;
+  border: 0; }
 
 #headerForm {
   padding: 45px;
@@ -389,9 +393,9 @@ body {
   transform: translate(0, -112px);
   transition: all .2s ease-in-out; }
 
-#headerFormName:focus ~ label,
-#headerFormPhone:focus ~ label,
-#headerFormEmail:focus ~ label {
+#headerFormName:placeholder-shown ~ label,
+#headerFormPhone:placeholder-shown ~ label,
+#headerFormEmail:placeholder-shown ~ label {
   transform: translate(0, -40px);
   font-size: 12px;
   text-decoration: none;
@@ -1116,6 +1120,93 @@ img.banner {
   font-family: 'AvenirNextCyr-Bold';
   font-size: 50px;
   line-height: 18px; }
+
+.services-single-hero {
+  height: 500px;
+  background-color: #fabe1a;
+  padding-top: 150px;
+  position: relative; }
+  .services-single-hero .header-link {
+    display: block;
+    margin-top: 50px;
+    font-size: 20px; }
+  .services-single-hero .dots {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+
+#servicesFeatures .item {
+  width: 100%;
+  height: 550px; }
+
+.carousel-bricks-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  right: 5%;
+  left: 5%; }
+
+.carousel-brick {
+  width: 19.7%;
+  margin-top: 20px;
+  height: 140px;
+  overflow: hidden;
+  color: #000; }
+  .carousel-brick .brick-front {
+    height: 140px; }
+    .carousel-brick .brick-front .servicesFeatures-item-thumbnail {
+      width: 100%;
+      height: 60px;
+      margin-top: 40px; }
+      .carousel-brick .brick-front .servicesFeatures-item-thumbnail svg {
+        width: 100%;
+        height: 60px; }
+    .carousel-brick .brick-front h5 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+  .carousel-brick .brick-back {
+    height: 0; }
+  .carousel-brick:hover .brick-front {
+    height: 0;
+    display: none; }
+  .carousel-brick:hover .brick-back {
+    height: 140px;
+    font-size: 12px; }
+
+.brick-back p:first-child {
+  border: 1px solid #ccc; }
+
+.left.carousel-control,
+.right.carousel-control {
+  background: inherit; }
+
+.carousel-indicators {
+  top: 550px; }
+  .carousel-indicators li {
+    background-color: #000;
+    border-radius: 0; }
+  .carousel-indicators li.active {
+    transform: rotate(45deg);
+    background-color: #fabe1a; }
+
+.dots-wrapper:before,
+.dots-wrapper:after {
+  content: "+";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  font-size: 26px;
+  color: #fabe1a;
+  position: absolute;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 @media screen and (max-width: 768px) {
   body {

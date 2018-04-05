@@ -13,10 +13,12 @@ body{
   padding-right: 90px;
   overflow-x: hidden;
 }
+input:focus {
+  outline: 0;
+}
 .btn-main{
   border-radius: 0;
 }
-
 .navbar{
   height:90px;
 }
@@ -42,14 +44,6 @@ body{
     border:0;
     padding: 45px;
     padding-bottom: 0;
-    &:after{
-      content:'×';
-      display: block;
-      position: absolute;
-      top:10px;
-      right:10px;
-      font-size: 4rem;
-    }
   }
   & .form-header{
     font-family: 'AvenirNextCyr-Bold';
@@ -61,6 +55,15 @@ body{
     line-height: 23px;
     color: #949494;
   }
+}
+.modal-escape{
+  display: block;
+  position: absolute;
+  top:10px;
+  right:10px;
+  font-size: 4rem;
+  background: none;
+  border:0;
 }
 #headerForm{
   padding: 45px;
@@ -108,9 +111,9 @@ body{
   transform: translate(0, -112px);
   transition: all .2s ease-in-out;
 }
-#headerFormName:focus ~ label,
-#headerFormPhone:focus ~ label,
-#headerFormEmail:focus ~ label{
+#headerFormName:placeholder-shown ~ label,
+#headerFormPhone:placeholder-shown ~ label,
+#headerFormEmail:placeholder-shown ~ label{
   transform: translate(0, -40px);
   font-size: 12px;
   text-decoration: none;
@@ -932,16 +935,110 @@ img.banner{
     line-height: 18px;
   }
 }
+// =============================================================================single-services
+.services-single{}
+.services-single-hero{
+  height: 500px;
+  background-color: #fabe1a;
+  padding-top: 150px;
+  position: relative;
+  & .header-link{
+    display: block;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  & .dots{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+  }
+}
+#servicesFeatures .item{
+  width: 100%;
+  height: 550px;
+}
+.carousel-bricks-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  right:5%;
+  left:5%;
+}
+.carousel-brick{
+  width: 19.7%;
+  margin-top: 20px;
+  height: 140px;
+  overflow: hidden;
+  color: #000;
+  & .brick-front{
+    height:140px;
+    & .servicesFeatures-item-thumbnail{
+      width: 100%;
+      height:60px;
+      margin-top: 40px;
+      & svg{
+        width:100%;
+        height:60px;
+      }
+    }
+    & h5{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  & .brick-back{
+    height: 0;
+  }
+  &:hover .brick-front{
+    height:0;
+    display: none;
+  }
+  &:hover .brick-back{
+    height: 140px;
+    font-size: 12px;
 
+  }
+}
+.brick-back p:first-child{
+  border: 1px solid #ccc;
+}
+.left.carousel-control,
+.right.carousel-control{
+  background: inherit;
+}
+.carousel-indicators{
+  top: 550px;
+  & li{
+    background-color: #000;
+    border-radius: 0;
+  }
+  & li.active{
+    transform: rotate(45deg);
+    background-color: #fabe1a;
+  }
+}
 
-
-
-
-
-
-
-
-
+.dots-wrapper:before,
+.dots-wrapper:after{
+  content: "+";
+  display: block;
+  width:20px;
+  height:20px;
+  margin-right: 20px;
+  font-size: 26px;
+  color: #fabe1a;
+  position: absolute;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.dots-wrapper:before,
+.dots-wrapper:after{}
 
 
 
