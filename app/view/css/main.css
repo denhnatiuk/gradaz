@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body::-webkit-scrollbar {
   width: 0.5em; }
 
@@ -18,28 +19,43 @@ body::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: 'GeorginaDemo';
-  src: url("../fonts/GeorginaDemo-Regular.ttf") format("ttf");
+  src: url("../fonts/GEORGINADEMO-REGULAR_0.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AvenirNextCyr-Thin';
+  src: url("../fonts/AVENIRNEXTCYR-THIN_0.OTF");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AvenirNextCyr-Regular';
-  src: url("../fonts/AvenirNextCyr-Regular.eot");
-  src: url("../fonts/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+  src: url("../fonts/AVENIRNEXTCYR-REGULAR_0.OTF");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AvenirNextCyr-Medium';
-  src: url("../fonts/AvenirNextCyr-Medium.eot");
-  src: url("../fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  src: url("../fonts/AVENIRNEXTCYR-MEDIUM_0.OTF");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AvenirNextCyr-light';
+  src: url("../fonts/AVENIRNEXTCYR-LIGHT_0.OTF");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AvenirNextCyr-Demi';
+  src: url("../fonts/AVENIRNEXTCYR-DEMI_0.OTF");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AvenirNextCyr-Bold';
-  src: url("../fonts/AvenirNextCyr-Bold.eot");
-  src: url("../fonts/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+  src: url("../fonts/AVENIRNEXTCYR-BOLD_0.OTF");
   font-weight: normal;
   font-style: normal; }
 
@@ -245,8 +261,7 @@ body {
   background-image: url(../images/top-bg.jpg);
   background-position: center;
   height: 678px;
-  width: 100%;
-  margin-top: 90px; }
+  width: 100%; }
 
 .section-header-sup:before {
   content: "+";
@@ -1229,6 +1244,36 @@ img.banner {
   animation-duration: 4000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
+
+.faq-list {
+  list-style-type: none; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+.faq-title {
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 18px; }
+
+.faq-text {
+  font-family: 'AvenirNextCyr-Regular';
+  font-size: 16px; }
+
+.faq-title:after {
+  background: inherit;
+  content: '▪';
+  color: #000;
+  float: left;
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin: -5px 10px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px; }
+
+details[open] .faq-title:after {
+  transform: rotate(45deg);
+  color: #fabe1a; }
 
 @media screen and (max-width: 768px) {
   body {

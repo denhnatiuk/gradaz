@@ -13,6 +13,7 @@ body{
   padding-right: 90px;
   overflow-x: hidden;
 }
+
 .btn-main{
   border-radius: 0;
 }
@@ -947,6 +948,37 @@ img.banner{
 .dots-wrapper:after{}
 
 
+.faq-list{
+  list-style-type: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+.faq-title{
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 18px;
+}
+.faq-text{
+  font-family: 'AvenirNextCyr-Regular';
+  font-size: 16px;
+}
+.faq-title:after {
+    background: inherit;
+    content: '▪';
+    color: #000;
+    float: left;
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin: -5px 10px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+}
+details[open] .faq-title:after {
+    transform: rotate(45deg);
+    color: #fabe1a;
+}
 
 
 
